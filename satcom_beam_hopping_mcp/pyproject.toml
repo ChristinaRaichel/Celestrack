@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "satcom_beam_hopping_mcp"
+version = "0.1.0"
+description = "Multi Agent RL (MAPPO) for SatCom Beam Hopping"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors =[
+    {name = "Christina Raichel Francis"}
+]
+
+keywords = [
+"multi-agent-rl",
+"mappo",
+"satellite communication",
+"beam-hopping",
+"pytorch"
+]
+
+dependencies =[
+    "torch>=2.0.0",
+    "gymnasium>=0.29.0",
+    "numpy>=1.24.0",
+    "skyfield>=1.46",
+    "requests>=2.31.0",
+    "fastmcp>=0.1.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.2.0",
+    "mypy>=1.8.0"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
