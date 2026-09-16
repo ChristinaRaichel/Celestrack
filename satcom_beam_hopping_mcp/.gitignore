@@ -6,9 +6,9 @@ __pycache__/
 
 # Virtual environments
 .venv/
-venv/
-ENV/
-env/
+*venv/
+*ENV/
+*env/
 
 #Python distribution / packaging
 build/

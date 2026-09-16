@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "satcom beam hopping"
+name = "satcom_beam_hopping_mcp"
 version = "0.1.0"
 description = "Multi Agent RL (MAPPO) for SatCom Beam Hopping"
 readme = "README.md"
