@@ -1,0 +1,10 @@
+.pyc
+
+#secrets
+.env
+
+
+#virtual env
+.venv
+
+
